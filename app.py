@@ -37,8 +37,8 @@ def main():
         
 
         # create embeddings
-        # embeddings = OpenAIEmbeddings()
-        # knowledge_base = FAISS.from_texts(chunks, embeddings)
+        embeddings = OpenAIEmbeddings()
+        knowledge_base = FAISS.from_texts(chunks, embeddings)
 
         # show user input
         user_question = st.text_input("Ask a question about your PDF:")
